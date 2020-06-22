@@ -9,7 +9,7 @@ Types of objects
 
  
 #create a Vectors#
-a. Create a vector
+# a. Create a vector
 mango <- c('yallow', 'oval', 3)
 print(mango)
 class(mango)
@@ -17,6 +17,7 @@ print(class(mango))
 
 #create a list
 list1 <- list(mango, 2.3, 6.9)
+# Print list1
 print(list1)
 
 #create a Matirces
