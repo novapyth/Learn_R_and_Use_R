@@ -1,12 +1,15 @@
-#LOOPS same as in Java, python n other programming languages
+#LOOPS#
+#A loop statement allows us to execute a statement or group of statements multiple times#
+#Repeat loop#
 1. The basic syntax for creating a repeat loop in R is:
-    repeat {
+    repeat {        #repeat functions use to execute repeat loop#
       commands
       if(condition){
-        break
+        break       #Break statement: Terminates the loop statement and transfers execution to the statement immediately following the loop#
       }
     }
-Example on repeat loop:
+
+#Example:#
   v <- c("Hello","loop")
   cnt <- 2
 repeat{
@@ -17,11 +20,12 @@ repeat{
   }}
 
 2. The basic syntax for creating a while loop in R is :
-  Define your variable first
-  while (test_expression) {
+  Define
+  while (logical_expression) {
     statement
   }
-Example:
+
+#Example:#
   v <- c("Hello","while loop")
   cnt <- 2
 while (cnt < 7){
@@ -30,12 +34,12 @@ while (cnt < 7){
 }
 
 3. Syntax of for loops
-define your vector
+Define vector
 for (value in vector) {
   statements
 }
 
-Example:
+#Example:#
   v <- LETTERS[1:10]
 for ( i in v (variable)) {
   print(i)
