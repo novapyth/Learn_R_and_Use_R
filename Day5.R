@@ -1,5 +1,5 @@
 #Vector Manipulation#
-# Create two vectors.
+# Create two vectors. Here V1 and V2 are of same length
   v1 <- c(3,8,4,5,0,11)
   v2 <- c(4,11,0,8,1,2)
 # Vector addition.
@@ -15,7 +15,7 @@
   divi.result <- v1/v2
   print(divi.result)
 
-#Vector Element Recycling#
+#Vector Element Recycling# what if vectors are not of same length
   v1 <- c(3,8,4,5,0,11)
   v2 <- c(4)
 # V2 becomes c(4,11,4,11,4,11)
@@ -24,7 +24,7 @@
   sub.result <- v1-v2
   print(sub.result)
 
-#Vector Element Sorting#
+#Vector Element Sorting by using Sort () function#
   v <- c(3,8,4,5,0,11, -9, 304)
 # Sort the elements of the vector.
   sort.result <- sort(v)
@@ -32,7 +32,7 @@
 # Sort the elements in the reverse order.
   revsort.result <- sort(v, decreasing = TRUE)
   print(revsort.result)
-# Sorting character vectors.
+# Sorting character vectors alphabetically.
   v <- c("Red","Blue","yellow","violet")
   sort.result <- sort(v)
   print(sort.result)
