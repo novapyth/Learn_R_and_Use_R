@@ -1,67 +1,79 @@
 #LOOPS same as in Java, python n other programming languages
-1. The basic syntax for creating a repeat loop in R is:
-    repeat {
-      commands
-      if(condition){
-        break
-      }
-    }
-Example on repeat loop:
+#1. The basic syntax for creating a repeat loop in R is:
+#   repeat {
+#     commands
+#     if(condition){
+#       break
+#     }
+#   }
+#Example on repeat loop:
   v <- c("Hello","loop")
   cnt <- 2
 repeat{
   print(v) #COMMANDS#
   cnt <- cnt+1 #COMMANDS#
-  if(cnt > 5){
+  if(cnt >8){
     break
-  }}
-
-2. The basic syntax for creating a while loop in R is :
-  Define your variable first
-  while (test_expression) {
-    statement
   }
-Example:
+  }
+
+#2. The basic syntax for creating a while loop in R is :
+# Define your variable first
+# while (test_expression) {
+ #   statement
+#}
+#Example:
   v <- c("Hello","while loop")
-  cnt <- 2
-while (cnt < 7){
   print(v)
+  cnt <- 2
+# print (cnt)
+  while (cnt < 7){
+ print(v)
   cnt = cnt + 1
+# print (cnt)
 }
 
-3. Syntax of for loops
-define your vector
-for (value in vector) {
-  statements
+# 3. Syntax of for loops
+# define your vector
+# for (value in vector) {
+#  statements
+#}
+
+# Example:
+v <- LETTERS[1:10]
+for ( i in v) {
+  print(i)
 }
 
-Example:
-  v <- LETTERS[1:10]
-for ( i in v (variable)) {
+# Example:
+v <- letters[1:10]
+for ( i in v) {
   print(i)
 }
 
 
 #Functions
-#Bult in functions
+#Built in functions
 # Create a sequence of numbers from 32 to 44.
 print(seq(32,44))
 # Find mean of numbers from 25 to 82.
 print(mean(25:82))
 # Find sum of numbers from 41 to 68.
+print(seq(41,68))
 print(sum(41:68))
+
 
 #Use these functions: seq(), mean(), max(), sum(x)and paste(...)
 
 #if you want to create your own function
 #syntax to define user function.
-function_name <- function(arg_1, arg_2, ...) {
-  Function body
-}
+#function_name <- function(arg_1, arg_2, ...) {
+ # Function body
+#}
 
-Example:
+#Example:
   # Create a function to print squares of numbers in sequence with an argument.
-  alisha.function <- function(a) {
+    alisha.function <- function(a) {
     for(i in 1:a) {
       b <- i^2
       print(b)
@@ -73,7 +85,7 @@ alisha.function(9)
 
 # Create a function without an argument.
 priyanka.function <- function() {
-  for(i in 1:9) {
+  for(i in 1:21) {
     print(i^2)
   }
 }
@@ -95,7 +107,7 @@ new.function(a=11,b=5,c=3)
 a<- "r programming"
 print(a)
 #Manupulating the strings
-a) Concatenating a string- PASTE ()
+#a) Concatenating a string- PASTE ()
 a <- "Hello"
 b <- "Priyanka"
 c <- "Alia"
@@ -103,6 +115,7 @@ print (paste(a,b,c))
 print (paste(a,b,c, sep= "-"))
 print (paste(a,b,c, sep= "-", collapse = NULL))
 
-b) Formatting a string - FORMAT()
-a<- format(12.38589, digits = 4 )
+#b) Formatting a string - FORMAT()
+a<- format(121.38589, digits = 4 )
 print(a)
+
