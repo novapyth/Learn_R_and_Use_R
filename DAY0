@@ -32,5 +32,7 @@ sudo apt -y install r-base
 #Installation of Rstudio#
 Once base R is installed, you can go ahead and install RStudio. For that we are going to head over again to the RStudio downloads page (https://rstudio.com/products/rstudio/download/#download) and download the .deb file for our Ubuntu version
 
-Hurray ! R platform is ready to use and Play with data................
+Hurray ! R platform is ready to use
+
+Play with data................
 
