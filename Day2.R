@@ -66,7 +66,7 @@ print(v2)
 print(v3)
 
 #Miscellaneous Operators#
-#Number of Miscellaneous operators :, %in%, %*%#
+#Number of Miscellaneous operators :, %n%, %*% #
 v <- (2:10)
 print(v)
 
